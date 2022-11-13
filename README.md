@@ -11,7 +11,7 @@
 - 71-3 Introduction to Daisy UI to use default NavBar
 - 71-4 Create simple Top Banner Using Hero component
 - 71-5 Make Info Card Dynamic with dynamic CSS Class
-
+- 71-6 Responsive Grid for services section
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
