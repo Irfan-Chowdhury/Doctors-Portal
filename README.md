@@ -8,6 +8,7 @@
 ## `MODULE LIST`
 - 71-1 Module introduction and project setup
 - 71-2 Setup react router dom layout and routes
+- 71-3 Introduction to Daisy UI to use default NavBar
 
 
 ## `PACKAGES`
