@@ -13,6 +13,7 @@
 - 71-5 Make Info Card Dynamic with dynamic CSS Class
 - 71-6 Responsive Grid for services section
 - 71-7 Pop image out of the section in Appointment section
+- 71-8 Add Testimonials with Avatar and fake data
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
