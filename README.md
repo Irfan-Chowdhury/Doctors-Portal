@@ -7,6 +7,7 @@
 
 ## `MODULE LIST`
 - 71-1 Module introduction and project setup
+- 71-2 Setup react router dom layout and routes
 
 
 ## `PACKAGES`
