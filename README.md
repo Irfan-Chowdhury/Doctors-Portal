@@ -21,6 +21,7 @@
 - 72-5 Display a modal from on booking click with dynamic data
 - 72-6 Create Booking form inside Booking modal
 - 72-7 (Recap) Modal data and state interactions
+- 72-8 Module summary and Close Modal
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
