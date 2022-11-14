@@ -15,6 +15,7 @@
 - 71-7 Pop image out of the section in Appointment section
 - 71-8 Add Testimonials with Avatar and fake data
 - 72-1 Module Introduction, Recap and Appointment Page
+- 72-2 Create Appointment Banner using React Day Picker
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
@@ -62,3 +63,12 @@ plugins:
 [require("daisyui")],
 ```
 
+#### 5. [React DayPicker](https://react-day-picker.js.org/)
+```bash
+npm install react-day-picker date-fns
+```
+
+and then go to <i>index.js</i> and paste.
+```bash
+import 'react-day-picker/dist/style.css';
+```
