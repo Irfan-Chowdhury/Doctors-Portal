@@ -17,7 +17,7 @@
 - 72-1 Module Introduction, Recap and Appointment Page
 - 72-2 Create Appointment Banner using React Day Picker
 - 72-3 Lift up state to share data and Available Appointment Component
-
+- 72-4 Appointment Options and available slots with conditional rendering
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
