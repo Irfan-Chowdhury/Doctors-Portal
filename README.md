@@ -20,6 +20,7 @@
 - 72-4 Appointment Options and available slots with conditional rendering
 - 72-5 Display a modal from on booking click with dynamic data
 - 72-6 Create Booking form inside Booking modal
+- 72-7 (Recap) Modal data and state interactions
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
