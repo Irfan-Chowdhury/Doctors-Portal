@@ -16,6 +16,7 @@
 - 71-8 Add Testimonials with Avatar and fake data
 - 72-1 Module Introduction, Recap and Appointment Page
 - 72-2 Create Appointment Banner using React Day Picker
+- 72-3 Lift up state to share data and Available Appointment Component
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
