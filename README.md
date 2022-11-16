@@ -22,7 +22,8 @@
 - 72-6 Create Booking form inside Booking modal
 - 72-7 (Recap) Modal data and state interactions
 - 72-8 Module summary and Close Modal
-
+- 73-1 Module Introduction and react hook form setup
+- 73-2 Setup Login page, and Firebase Project setup
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
