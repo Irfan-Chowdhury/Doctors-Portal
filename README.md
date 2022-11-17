@@ -26,6 +26,8 @@
 - 73-2 Setup Login page, and Firebase Project setup
 - 73-3 Explore React hook form validation, error handling
 - 73-4 (Recap) React hook form to create the Sign up Form
+- 73-5 Use RegEx validation in React Hook form
+- 73-6 (Recap) Create Auth Context and implement user sign up
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
