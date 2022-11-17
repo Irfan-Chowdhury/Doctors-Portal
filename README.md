@@ -7,7 +7,7 @@
 
 ## `MODULE LIST`
 - 74-1 Module overview and create server
-
+- 74-2 Load available options from database
 
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
