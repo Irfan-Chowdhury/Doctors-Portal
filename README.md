@@ -31,7 +31,7 @@
 - 73-7 (Recap) Implement Login and auth state observer
 - 73-8 (Recap) Update Username and conditional sign out
 - 73-9 Private Route and redirect user to the page they wanted to go
-
+- 74-3 Simple Overview of React Query and load data
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
@@ -98,3 +98,11 @@ npm install react-hook-form
 ```bash
 npm install react-hot-toast
 ```
+
+
+#### 7. [Tanstack Query](https://tanstack.com/)
+```bash
+npm i @tanstack/react-query
+```
+
+
