@@ -24,6 +24,9 @@
 - 72-8 Module summary and Close Modal
 - 73-1 Module Introduction and react hook form setup
 - 73-2 Setup Login page, and Firebase Project setup
+- 73-3 Explore React hook form validation, error handling
+- 73-4 (Recap) React hook form to create the Sign up Form
+
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
@@ -78,4 +81,10 @@ npm install react-day-picker date-fns
 and then go to <i>index.js</i> and paste.
 ```bash
 import 'react-day-picker/dist/style.css';
+```
+
+
+#### 6. [React - Hook](https://react-hook-form.com/)
+```bash
+npm install react-hook-form
 ```
