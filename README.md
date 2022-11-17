@@ -28,7 +28,7 @@
 - 73-4 (Recap) React hook form to create the Sign up Form
 - 73-5 Use RegEx validation in React Hook form
 - 73-6 (Recap) Create Auth Context and implement user sign up
-
+- 73-7 (Recap) Implement Login and auth state observer
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
