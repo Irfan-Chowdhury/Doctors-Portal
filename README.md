@@ -29,6 +29,8 @@
 - 73-5 Use RegEx validation in React Hook form
 - 73-6 (Recap) Create Auth Context and implement user sign up
 - 73-7 (Recap) Implement Login and auth state observer
+- 73-8 (Recap) Update Username and conditional sign out
+
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
@@ -89,4 +91,9 @@ import 'react-day-picker/dist/style.css';
 #### 6. [React - Hook](https://react-hook-form.com/)
 ```bash
 npm install react-hook-form
+```
+
+#### 7. [React - Hot Toast](https://react-hot-toast.com/docs)
+```bash
+npm install react-hot-toast
 ```
