@@ -30,6 +30,7 @@
 - 73-6 (Recap) Create Auth Context and implement user sign up
 - 73-7 (Recap) Implement Login and auth state observer
 - 73-8 (Recap) Update Username and conditional sign out
+- 73-9 Private Route and redirect user to the page they wanted to go
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
