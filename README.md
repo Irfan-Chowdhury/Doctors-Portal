@@ -33,6 +33,7 @@
 - 73-9 Private Route and redirect user to the page they wanted to go
 - 74-3 Simple Overview of React Query and load data
 - 74-4 API naming convention and save Booking to database
+- 74-5 (Interesting) Find available time slots for a day
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
