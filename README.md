@@ -37,6 +37,8 @@
 - 74-6 (Recap) Load available time slots based on the date
 - 74-8 Limit one booking per user per treatment per day
 - 75-1 Create Dashboard route with Drawer and Nested Route
+- 75-2 Display User specific Appointments using Data Table
+- 75-3 Save Registered user information in the database
 
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
