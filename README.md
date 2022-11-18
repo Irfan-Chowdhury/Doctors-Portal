@@ -16,6 +16,8 @@
 - 74-8 Limit one booking per user per treatment per day
 - 75-2 Display User specific Appointments using Data Table
 - 75-3 Save Registered user information in the database
+- 75-4 (Recap) Issue Simple JWT token
+
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
     ```bash
@@ -25,3 +27,28 @@
     ```bash
     npm i express cors dotenv mongodb
     ```
+
+
+## `JWT Setup`
+- install JWT token. visit https://github.com/auth0/node-jsonwebtoken
+    ```bash
+    npm install jsonwebtoken
+    ```
+- setup the code in index.js
+    ```bash
+    const jwt = require('jsonwebtoken');
+    ```
+- Then create random code, Firstly open terminal and type 
+    ```bash
+    node
+    ```
+    then type 
+    ```bash
+    require('crypto').randomBytes(64).toString('hex')
+    ```
+    then a string value will be shown, copy the text and setup in .env and copy the code below later <br>
+    ```bash
+    // var token = jwt.sign({ foo: 'bar' }, process.env.ACCESS_TOKEN_SECRET);
+    const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET,{expiresIn:'1h'});
+    ```
+
