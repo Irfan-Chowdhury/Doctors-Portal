@@ -3,13 +3,14 @@ import React, { useEffect, useState } from 'react';
 import BookingModal from '../BookingModal/BookingModal';
 import AppointmentOption from './AppointmentOption';
 import { useQuery } from '@tanstack/react-query'
+import Loading from '../../Shared/Loading/Loading';
 
 const AvailableAppointments = ({selectedDate}) => {
     // const [appointmentOptions, setAppointmentOptions] = useState([]);
     const [treatment, setTreatment] = useState(null);
     const date = format(selectedDate,'PP');
 
-    const {data:appointmentOptions=[]} = useQuery({
+    const {data:appointmentOptions=[], refetch, isLoading} = useQuery({
         queryKey: ['appointmentOptions',date],
         queryFn: async () => { 
             const res = await fetch(`http://localhost:5000/appointmentOptions?date=${date}`);
@@ -17,6 +18,10 @@ const AvailableAppointments = ({selectedDate}) => {
             return data;
         }
     })
+
+    if (isLoading) {
+        return <Loading></Loading>
+    }
 
 
     // useEffect(() => {
@@ -43,6 +48,7 @@ const AvailableAppointments = ({selectedDate}) => {
                     selectedDate={selectedDate}
                     treatment={treatment}
                     setTreatment={setTreatment}
+                    refetch={refetch}
                 ></BookingModal>
             }
            
