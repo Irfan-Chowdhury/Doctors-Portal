@@ -18,26 +18,50 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         const appointmentOptionCollection = client.db('doctorsPortal').collection('appointmentOptions');
+        const bookingsCollection = client.db('doctorsPortal').collection('bookings');
 
         // Use Aggregate to query multiple collection and then merge data
         app.get('/appointmentOptions', async (req, res) => {
+            const date = req.query.date;
             const query = {};
             const options = await appointmentOptionCollection.find(query).toArray();
-            res.send(options);
 
             // get the bookings of the provided date
-            // const bookingQuery = { appointmentDate: date }
-            // const alreadyBooked = await bookingsCollection.find(bookingQuery).toArray();
+            const bookingQuery = { appointmentDate: date }
+            const alreadyBooked = await bookingsCollection.find(bookingQuery).toArray();
 
-            // // code carefully :D
-            // options.forEach(option => {
-            //     const optionBooked = alreadyBooked.filter(book => book.treatment === option.name);
-            //     const bookedSlots = optionBooked.map(book => book.slot);
-            //     const remainingSlots = option.slots.filter(slot => !bookedSlots.includes(slot))
-            //     option.slots = remainingSlots;
-            // })
-            // res.send(options);
+            // code carefully :D
+            options.forEach(option => {
+                const optionBooked = alreadyBooked.filter(book => book.treatment === option.name);
+                const bookedSlots = optionBooked.map(book => book.slot);
+                const remainingSlots = option.slots.filter(slot => !bookedSlots.includes(slot))
+                console.log(date, option.name, remainingSlots.length);
+                option.slots = remainingSlots;
+            })
+            res.send(options);
         });
+
+
+        
+
+        app.post('/bookings', async (req, res) => {
+            const booking = req.body;
+            console.log(booking);
+            const result = await bookingsCollection.insertOne(booking);
+            res.send(result);
+        })
+
+        /**
+         * API Naming Convention  [bookings]
+         * ---------------------------------
+         * app.get('/bookings')
+         * app.get('/bookings/:id')
+         * app.post('/bookings')
+         * app.patch('/bookings/:id')
+         * app.delete('/bookings/:id')
+         */
+
+
     }
     finally {
 
