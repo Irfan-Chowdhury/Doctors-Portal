@@ -32,6 +32,8 @@
 - 73-8 (Recap) Update Username and conditional sign out
 - 73-9 Private Route and redirect user to the page they wanted to go
 - 74-3 Simple Overview of React Query and load data
+- 74-4 API naming convention and save Booking to database
+
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
