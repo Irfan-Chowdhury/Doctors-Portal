@@ -14,6 +14,7 @@
 - 74-6 (Recap) Load available time slots based on the date
 - 74-7 (optional) Use mongodb aggregate project pipeline
 - 74-8 Limit one booking per user per treatment per day
+- 75-2 Display User specific Appointments using Data Table
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
     ```bash
