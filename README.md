@@ -12,6 +12,7 @@
 - 74-4 API naming convention and save Booking to database
 - 74-5 (Interesting) Find available time slots for a day
 - 74-6 (Recap) Load available time slots based on the date
+- 74-7 (optional) Use mongodb aggregate project pipeline
 
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
