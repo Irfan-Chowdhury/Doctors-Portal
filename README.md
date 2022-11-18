@@ -35,7 +35,7 @@
 - 74-4 API naming convention and save Booking to database
 - 74-5 (Interesting) Find available time slots for a day
 - 74-6 (Recap) Load available time slots based on the date
-
+- 74-8 Limit one booking per user per treatment per day
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
