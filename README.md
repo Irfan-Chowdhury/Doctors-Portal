@@ -17,7 +17,8 @@
 - 75-2 Display User specific Appointments using Data Table
 - 75-3 Save Registered user information in the database
 - 75-4 (Recap) Issue Simple JWT token
-
+- 75-5 (Recap) Send JWT token to back end for verification
+- 75-6 (Recap) Verify JWT Token and create custom hook
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
     ```bash
