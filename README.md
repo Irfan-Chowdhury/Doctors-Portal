@@ -20,6 +20,8 @@
 - 75-5 (Recap) Send JWT token to back end for verification
 - 75-6 (Recap) Verify JWT Token and create custom hook
 - 75-7 Load all users on the Dashboard page
+- 75-8 Create Make admin API limit the feature based on admin level
+
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
     ```bash
