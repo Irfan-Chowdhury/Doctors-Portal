@@ -40,6 +40,7 @@
 - 75-2 Display User specific Appointments using Data Table
 - 75-3 Save Registered user information in the database
 - 75-5 (Recap) Send JWT token to back end for verification
+- 75-6 (Recap) Verify JWT Token and create custom hook
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
