@@ -22,7 +22,9 @@
 - 75-7 Load all users on the Dashboard page
 - 75-8 Create Make admin API limit the feature based on admin level
 - 75-9 (advanced) Prevent accessing Admin route via URL
-
+- 76-1 Module Overview and Add a doctor admin route setup
+- 76-2 Load services with data project and Add file type input
+- 76-3 File Type image field and understand form data
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
     ```bash
