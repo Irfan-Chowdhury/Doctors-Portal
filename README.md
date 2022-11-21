@@ -48,6 +48,7 @@
 - 76-2 Load services with data project and Add file type input
 - 76-3 File Type image field and understand form data
 - 76-4 Upload image to image hosting server imgbb and get image url
+- 76-5 Save Doctor info in the database and display success message
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
