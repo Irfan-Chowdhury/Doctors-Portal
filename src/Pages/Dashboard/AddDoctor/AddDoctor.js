@@ -8,7 +8,8 @@ import Loading from '../../Shared/Loading/Loading';
 const AddDoctor = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     
-    // const imageHostKey = process.env.REACT_APP_imgbb_key;
+    const imageHostKey = process.env.REACT_APP_imgbb_key;
+    console.log(imageHostKey);
 
     // const navigate = useNavigate();
     
@@ -21,44 +22,46 @@ const AddDoctor = () => {
         }
     })
 
-    // const handleAddDoctor = data => {
-    //     const image = data.image[0];
-    //     const formData = new FormData();
-    //     formData.append('image', image);
-    //     const url = `https://api.imgbb.com/1/upload?key=${imageHostKey}`
-    //     fetch(url, {
-    //         method: 'POST',
-    //         body: formData
-    //     })
-    //     .then(res => res.json())
-    //     .then(imgData => {
-    //         if(imgData.success){
-    //             console.log(imgData.data.url);
-    //             const doctor = {
-    //                 name: data.name, 
-    //                 email: data.email,
-    //                 specialty: data.specialty,
-    //                 image: imgData.data.url
-    //             }
+    const handleAddDoctor = data => {
+        const image = data.image[0];
+        const formData = new FormData();
+        formData.append('image', image);
+        // const url = `https://api.imgbb.com/1/upload?expiration=600&key=YOUR_CLIENT_API_KEY`
+        const url = `https://api.imgbb.com/1/upload?key=${imageHostKey}`
+        fetch(url, {
+            method: 'POST',
+            body: formData
+        })
+        .then(res => res.json())
+        .then(imgData => {
+            console.log(imgData);
+        //     if(imgData.success){
+        //         console.log(imgData.data.url);
+        //         const doctor = {
+        //             name: data.name, 
+        //             email: data.email,
+        //             specialty: data.specialty,
+        //             image: imgData.data.url
+        //         }
 
-    //             // save doctor information to the database
-    //             fetch('http://localhost:5000/doctors', {
-    //                 method: 'POST',
-    //                 headers: {
-    //                     'content-type': 'application/json', 
-    //                     authorization: `bearer ${localStorage.getItem('accessToken')}`
-    //                 },
-    //                 body: JSON.stringify(doctor)
-    //             })
-    //             .then(res => res.json())
-    //             .then(result =>{
-    //                 console.log(result);
-    //                 toast.success(`${data.name} is added successfully`);
-    //                 navigate('/dashboard/managedoctors')
-    //             })
-    //         }
-    //     })
-    // }
+        //         // save doctor information to the database
+        //         fetch('http://localhost:5000/doctors', {
+        //             method: 'POST',
+        //             headers: {
+        //                 'content-type': 'application/json', 
+        //                 authorization: `bearer ${localStorage.getItem('accessToken')}`
+        //             },
+        //             body: JSON.stringify(doctor)
+        //         })
+        //         .then(res => res.json())
+        //         .then(result =>{
+        //             console.log(result);
+        //             toast.success(`${data.name} is added successfully`);
+        //             navigate('/dashboard/managedoctors')
+        //         })
+        //     }
+        })
+    }
 
     if(isLoading){
         return <Loading></Loading>
@@ -67,8 +70,7 @@ const AddDoctor = () => {
     return (
         <div className='w-96 p-7'>
             <h2 className="text-4xl">Add A Doctor</h2>
-            {/* <form onSubmit={handleSubmit(handleAddDoctor)}> */}
-            <form>
+            <form onSubmit={handleSubmit(handleAddDoctor)}>
                 <div className="form-control w-full max-w-xs">
                     <label className="label"> <span className="label-text">Name</span></label>
                     <input type="text" {...register("name", {

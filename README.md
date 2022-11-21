@@ -47,6 +47,7 @@
 - 76-1 Module Overview and Add a doctor admin route setup
 - 76-2 Load services with data project and Add file type input
 - 76-3 File Type image field and understand form data
+- 76-4 Upload image to image hosting server imgbb and get image url
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
@@ -121,3 +122,7 @@ npm i @tanstack/react-query
 ```
 
 
+### Three Places to store image 
+- Third party image hosting server (https://imgbb.com/)
+- File system of your server
+- mongodb (database)
