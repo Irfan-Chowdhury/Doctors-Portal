@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
-// import ConfirmationModal from '../../Shared/ConfirmationModal/ConfirmationModal';
+import ConfirmationModal from '../../Shared/ConfirmationModal/ConfirmationModal';
 import Loading from '../../Shared/Loading/Loading';
 
 const ManageDoctors = () => {
@@ -86,7 +86,7 @@ const ManageDoctors = () => {
                     </tbody>
                 </table>
             </div>
-            {/* {
+            {
                 deletingDoctor && <ConfirmationModal
                     title={`Are you sure you want to delete?`}
                     message={`If you delete ${deletingDoctor.name}. It cannot be undone.`}
@@ -96,7 +96,7 @@ const ManageDoctors = () => {
                     closeModal = {closeModal}
                 >
                 </ConfirmationModal>
-            } */}
+            }
         </div>
     );
 };
