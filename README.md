@@ -25,6 +25,8 @@
 - 76-1 Module Overview and Add a doctor admin route setup
 - 76-2 Load services with data project and Add file type input
 - 76-3 File Type image field and understand form data
+- 76-8 Delete User VerifyAdmin middleware and load all doctors
+
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
     ```bash
