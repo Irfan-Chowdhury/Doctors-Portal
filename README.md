@@ -51,7 +51,7 @@
 - 76-5 Save Doctor info in the database and display success message
 - 76-6 Mange Doctors and delete doctor with authorization (homework)
 - 76-7 Create a generic purpose confirmation modal
-
+- 76-8 Delete User VerifyAdmin middleware and load all doctors
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
