@@ -55,6 +55,7 @@
 - 76-9 Module Summary and modal correction
 - 77-1 Module Overview and add price on treatments
 - 77-2 Create Payment route and get appointment by Id
+- 77-3 Error Element, install stripe and stripe for react
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
@@ -126,6 +127,12 @@ npm install react-hot-toast
 #### 7. [Tanstack Query](https://tanstack.com/)
 ```bash
 npm i @tanstack/react-query
+```
+
+#### 8. [Stripe Payment Gateway](https://stripe.com/docs/stripe-js/react)
+Github Link: https://github.com/stripe/react-stripe-js
+```bash
+npm install --save @stripe/react-stripe-js @stripe/stripe-js
 ```
 
 
