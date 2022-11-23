@@ -56,6 +56,7 @@
 - 77-1 Module Overview and add price on treatments
 - 77-2 Create Payment route and get appointment by Id
 - 77-3 Error Element, install stripe and stripe for react
+- 77-4 Basic Stipe setup and with simple card form
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
