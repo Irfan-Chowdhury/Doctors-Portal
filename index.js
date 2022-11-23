@@ -148,7 +148,12 @@ async function run() {
             res.send(bookings);
         })
 
-
+        app.get('/bookings/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) };
+            const booking = await bookingsCollection.findOne(query);
+            res.send(booking);
+        })
         
         app.post('/bookings', async (req, res) => {
             const booking = req.body;
@@ -267,6 +272,19 @@ async function run() {
          * app.delete('/bookings/:id')
          */
 
+        // temporary to update price field on appointment options
+        // app.get('/addPrice', async (req, res) => {
+        //     const filter = {}
+        //     const options = { upsert: true }
+        //     const updatedDoc = {
+        //         $set: {
+        //             price: 99
+        //         }
+        //     }
+        //     const result = await bookingsCollection.updateMany(filter, updatedDoc, options);
+        //     res.send(result);
+        // })
+
 
 
 
@@ -285,3 +303,5 @@ app.get('/', async (req, res) => {
 });
 
 app.listen(port, () => console.log(`Doctors portal running on ${port}`));
+
+//12:03

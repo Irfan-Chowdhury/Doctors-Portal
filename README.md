@@ -27,6 +27,7 @@
 - 76-3 File Type image field and understand form data
 - 76-8 Delete User VerifyAdmin middleware and load all doctors
 - 76-9 Module Summary and modal correction
+- 77-2 Create Payment route and get appointment by Id
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
     ```bash
