@@ -53,7 +53,8 @@
 - 76-7 Create a generic purpose confirmation modal
 - 76-8 Delete User VerifyAdmin middleware and load all doctors
 - 76-9 Module Summary and modal correction
-
+- 77-1 Module Overview and add price on treatments
+- 77-2 Create Payment route and get appointment by Id
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
