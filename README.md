@@ -57,6 +57,7 @@
 - 77-2 Create Payment route and get appointment by Id
 - 77-3 Error Element, install stripe and stripe for react
 - 77-4 Basic Stipe setup and with simple card form
+- 77-5 Handle payment processing error and success
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
@@ -135,6 +136,13 @@ Github Link: https://github.com/stripe/react-stripe-js
 ```bash
 npm install --save @stripe/react-stripe-js @stripe/stripe-js
 ```
+follow the link:
+```bash
+https://github.com/stripe/react-stripe-js/blob/master/examples/hooks/0-Card-Minimal.js
+
+https://stripe.com/docs/testing
+```
+
 
 
 ### Three Places to store image 
