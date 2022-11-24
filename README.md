@@ -28,6 +28,7 @@
 - 76-8 Delete User VerifyAdmin middleware and load all doctors
 - 76-9 Module Summary and modal correction
 - 77-2 Create Payment route and get appointment by Id
+- 77-6 Server side payment intents API to get client Secret from stripe
 ## `Setup Server`
 - First create a folder and then run this command for generating <i>package.json</i>
     ```bash
@@ -61,4 +62,15 @@
     // var token = jwt.sign({ foo: 'bar' }, process.env.ACCESS_TOKEN_SECRET);
     const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET,{expiresIn:'1h'});
     ```
+
+- install stripe 
+    ```bash
+    npm install --save stripe
+    ```
+
+    follow the tutorial link:
+    ```bash
+    https://stripe.com/docs/payments/quickstart?lang=node&client=react
+    ```
+
 
