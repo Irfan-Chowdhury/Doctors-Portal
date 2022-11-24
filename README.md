@@ -58,6 +58,7 @@
 - 77-3 Error Element, install stripe and stripe for react
 - 77-4 Basic Stipe setup and with simple card form
 - 77-5 Handle payment processing error and success
+- 77-6 Server side payment intents API to get client Secret from stripe
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
@@ -141,6 +142,8 @@ follow the link:
 https://github.com/stripe/react-stripe-js/blob/master/examples/hooks/0-Card-Minimal.js
 
 https://stripe.com/docs/testing
+
+https://stripe.com/docs/payments/quickstart?lang=node&client=react
 ```
 
 
