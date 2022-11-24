@@ -59,6 +59,7 @@
 - 77-4 Basic Stipe setup and with simple card form
 - 77-5 Handle payment processing error and success
 - 77-6 Server side payment intents API to get client Secret from stripe
+- 77-7 Process card confirmation for Payment
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
@@ -144,6 +145,8 @@ https://github.com/stripe/react-stripe-js/blob/master/examples/hooks/0-Card-Mini
 https://stripe.com/docs/testing
 
 https://stripe.com/docs/payments/quickstart?lang=node&client=react
+
+https://stripe.com/docs/js/payment_intents/payment_method
 ```
 
 
