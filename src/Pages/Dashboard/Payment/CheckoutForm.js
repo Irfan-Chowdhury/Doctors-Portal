@@ -3,7 +3,11 @@ import React, { useEffect, useState } from 'react';
 
 const CheckoutForm = ({booking}) => {
     const [cardError, setCardError] = useState('');
+    const [success, setSuccess] = useState('');
+    const [processing, setProcessing] = useState(false);
     const [clientSecret, setClientSecret] = useState(""); //.jsx
+    const [transactionId, setTransactionId] = useState('');
+
     const stripe = useStripe();
     const elements = useElements();
     const { price, email, patient, _id } = booking;
@@ -63,6 +67,42 @@ const CheckoutForm = ({booking}) => {
                 },
             },
         );
+
+        if (confirmError) {
+            setCardError(confirmError.message);
+            return;
+        }
+        setSuccess('');
+        setProcessing(true);
+
+        // console.log(paymentIntent);
+        if (paymentIntent.status === "succeeded") {
+            console.log('card info', card);
+            // store payment info in the database
+            // const payment = {
+            //     price,
+            //     transactionId: paymentIntent.id,
+            //     email,
+            //     bookingId: _id
+            // }
+            // fetch('http://localhost:5000/payments', {
+            //     method: 'POST',
+            //     headers: {
+            //         'content-type': 'application/json',
+            //         authorization: `bearer ${localStorage.getItem('accessToken')}`
+            //     },
+            //     body: JSON.stringify(payment)
+            // })
+            //     .then(res => res.json())
+            //     .then(data => {
+            //         console.log(data);
+            //         if (data.insertedId) {
+            //             setSuccess('Congrats! your payment completed');
+            //             setTransactionId(paymentIntent.id);
+            //         }
+            //     })
+        }
+        setProcessing(false);
     }
 
     return (
@@ -84,11 +124,17 @@ const CheckoutForm = ({booking}) => {
                         },
                     }}
                 />
-                <button className='btn btn-sm mt-4 btn-primary' type="submit" disabled={!stripe || !clientSecret}>
+                <button className='btn btn-sm mt-4 btn-primary' type="submit" disabled={!stripe || !clientSecret || !processing}>
                     Pay
                 </button>
             </form>
             <p className="text-red-500">{cardError}</p>
+            {
+                success && <div>
+                    <p className='text-green-500'>{success}</p>
+                    <p>Your transactionId: <span className='font-bold'>{transactionId}</span></p>
+                </div>
+            }
         </>
     );
 };
