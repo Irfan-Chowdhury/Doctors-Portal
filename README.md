@@ -61,6 +61,8 @@
 - 77-6 Server side payment intents API to get client Secret from stripe
 - 77-7 Process card confirmation for Payment
 - 77-8 Display payment error and success Message
+- 77-9 Store payment data and loader spinner
+
 ## `PACKAGES`
 #### 1. Create [React](https://reactjs.org/) App
 ```bash
